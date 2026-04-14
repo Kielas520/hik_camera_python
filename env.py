@@ -8,7 +8,7 @@ current_path = Path(__file__).resolve().parent
 
 # 2. 定义 lib 文件夹路径和 DLL 的完整路径
 # 使用 / 运算符进行路径拼接
-lib_path = current_path / "hik_lib"
+lib_path = current_path / "lib"
 dll_path = lib_path / "MvCameraControl.dll"
 
 # 3. 将 lib 目录添加到 DLL 搜索路径（针对 Python 3.8+）
