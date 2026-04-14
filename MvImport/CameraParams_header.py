@@ -4,11 +4,11 @@
 import platform
 
 from ctypes import *
-from tools.hik_camera.MvImport.CameraParams_const import *
-from tools.hik_camera.MvImport.PixelType_header import *
+from MvImport.CameraParams_const import *
+from MvImport.PixelType_header import *
 
-from tools.hik_camera.MvImport.CameraParams_const import *
-from tools.hik_camera.MvImport.PixelType_header import *
+from MvImport.CameraParams_const import *
+from MvImport.PixelType_header import *
 
 STRING = c_char_p
 
