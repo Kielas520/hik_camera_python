@@ -26,7 +26,7 @@ hik_camera_python/
 └── pyproject.toml         # 项目依赖配置文件
 ```
 
-link : https://www.hikrobotics.com/cn/machinevision/service/download/?module=0
+download_link : https://www.hikrobotics.com/cn/machinevision/service/download/?module=0
 
 hik_lib/ -> C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64
 
