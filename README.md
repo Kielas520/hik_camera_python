@@ -26,6 +26,13 @@ hik_camera_python/
 └── pyproject.toml         # 项目依赖配置文件
 ```
 
+link : https://www.hikrobotics.com/cn/machinevision/service/download/?module=0
+
+hik_lib/ -> C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64
+
+MV_Import -> C:\Program Files (x86)\MVS\Development\Samples\Python\MvImport
+
+
 > **注意**：`hik_lib` 和 `MvImport` 目录不包含在源码中，你需要从海康机器人的官方 MVS 客户端安装路径下提取这些库文件和 Python 接口文件。
 
 ---
@@ -91,17 +98,17 @@ cap = HikCamera(device_index=0)
 
 # 2. 打开设备并开始取流
 if cap.open():
-    
+
     # 3. 设置曝光 (单位: 微秒)
-    cap.set_exposure(10000, auto_mode=False) 
-    
+    cap.set_exposure(10000, auto_mode=False)
+
     # 4. 获取当前曝光
     current_exposure = cap.get_exposure()
-    
+
     # 5. 读取一帧图像
     # ret 为布尔值，frame 为转换后的 numpy 数组格式图像
     ret, frame = cap.read()
-    
+
     # 6. 释放资源
     cap.close()
 ```
